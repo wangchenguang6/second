@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var i = 100;
+        var str = prompt('请输入您要进行的操作: \n\n1.存钱\n\n2.\t取钱\n\n3.显示余额\n\n4.退出');
+        switch (str) {
+            case '1':
+                var num = Number(prompt('请输入您要存储的金额数量: '));
+                alert('尊敬的用户您好,恭喜您成功存储: ' + (i + num));
+                break;
+            case '2':
+                var or = Number(prompt('请输入您要取得金额数量:'));
+                alert('尊敬的用户您好,恭喜您成功取钱: ' + (i - or));
+                break;
+            case '3':
+                alert('尊敬的用户您好,您的余额为: ' + i)
+                break;
+            case '4':
+                alert('尊敬的用户您好,您已成功退出,谢谢')
+                break;
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
